@@ -1,0 +1,131 @@
+.landing {
+  background-image: url(../../image/pageone.jpg);
+  background-size: cover;
+  min-height: calc(100vh - 45px);
+  position: relative;
+}
+
+/* start styling for page Two */
+.list li:hover {
+  background-color: white;
+  cursor: pointer;
+  border-bottom: 1px solid blue;
+  transition: 0.8s;
+}
+
+.list li:hover a,
+.list li:hover svg {
+  color: blue !important;
+}
+.fligtandstop {
+  position: relative;
+}
+.flight-border::before,
+.stop-border::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  bottom: 6px;
+  background-color: #0000ff0a;
+  border-bottom: 4px solid blue;
+  transition: 0.9s;
+}
+.flight-border::before {
+  left: 0;
+}
+.stop-border::after {
+  right: 0%;
+}
+.flight-border:hover,
+.stop-border:hover {
+  color: blue;
+  box-shadow: 0px 0px 20px 4px #0d6efd29;
+  transition: 2s;
+}
+.flight-border:hover::before,
+.stop-border:hover::after {
+  width: 100%;
+}
+.promo {
+  cursor: pointer;
+}
+.plane,
+.plane-bottom {
+  position: absolute;
+  font-size: 40px;
+  color: #8080807a;
+}
+.plane {
+  top: 0;
+  left: 0%;
+  animation: plane 20s infinite;
+}
+.plane-bottom {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  animation: planebottom 20s infinite;
+}
+.plane:hover {
+  animation-play-state: paused;
+}
+@keyframes plane {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@keyframes planebottom {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 85%;
+  }
+}
+
+/****************************** start styling for Landing three *********************/
+
+.landing-card {
+  border: 1px solid gainsboro;
+  transition: 0.9s;
+}
+.landing-card:hover {
+  box-shadow: 1px 1px 13px 7px gainsboro;
+}
+
+.landing-card {
+  position: relative;
+}
+.landing-card:hover::before,
+.landing-card:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.landing-card {
+  position: relative;
+}
+.landing-card::before,
+.landing-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 10%;
+  background-color: #0d6efd1a;
+  border-top: 4px solid blue;
+  visibility: hidden;
+  transition: 1s;
+}
+.landing-card::after {
+  right: 0;
+}
+.landing-card::before {
+  left: 0;
+}

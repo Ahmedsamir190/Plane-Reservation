@@ -1,0 +1,57 @@
+.travel-experience {
+    background-color: #dcdcdc2b;
+}
+.content {
+    gap: 105px 0px;
+}
+.seat-photo img ,
+.info img{
+    max-width: 100%;
+}
+.info {
+    gap: 25px;
+}
+.firstclass-info {
+    width: 85%;
+}
+.seat-photo img {
+    width: 100%;
+}
+.part-one,
+.seat-photo {
+    flex-basis: 50%;
+}
+@media (max-width:991px) {
+    .part-one,
+    .seat-photo {
+        flex-basis: 100%; 
+    } 
+    .seat-photo  {
+        padding-top: 50px;
+    }
+}
+.benfit {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    gap: 55px 32px;
+    background-color: white;
+    width: 95%;
+    text-align: center;
+    border-radius: 8%;
+    border: 1px solid #80808036;
+    padding: 23px;
+    transition: 0.9s;
+}
+@media (max-width:991px) {
+    .benfit {
+        width: 100%;
+    }
+}
+.benfit:hover {
+    box-shadow: 1px 1px 20px 8px #80808038;
+    cursor: pointer;
+}
+.benfit-log {
+    display: grid;
+}

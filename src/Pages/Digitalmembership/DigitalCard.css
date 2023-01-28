@@ -1,0 +1,28 @@
+.membercard-content {
+  background-color: #dcdcdc54;
+}
+.card-details {
+  border-radius: 5%;
+  transition: 0.9s;
+}
+.card-details:hover {
+  box-shadow: 1px 1px 20px 0px #8080807a;
+}
+.card-details:hover h6::after {
+  width: 100%;
+}
+.card-details h6 {
+  position: relative;
+}
+.card-details h6::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+  border: 1px solid blue;
+  transition: 1.9s;
+}
+.content-row {
+  gap: 45px 0px;
+}

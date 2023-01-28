@@ -1,0 +1,18 @@
+.program-content {
+  background-color: #dcdcdc54;
+}
+.family-member ol {
+  line-height: 40px;
+}
+.card-info {
+  border: 1px solid #8080801f;
+  border-radius: 10%;
+  box-shadow: 1px 1px 19px 1px gainsboro;
+  padding: 20px 15px;
+}
+.cloud-icon {
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+  color: #bfe0e7;
+}

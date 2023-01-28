@@ -1,0 +1,49 @@
+.navcont img {
+  height: 45px;
+}
+@media (max-width: 480px) {
+  .navcont img {
+    height: 31px;
+  }
+}
+.glob-logo {
+  content: "";
+  position: absolute;
+  top: 0;
+  color: #b58b50;
+  left: 100%;
+  padding-left: 5px;
+}
+.pcolor {
+  color: #b58b50;
+}
+.search-logo,
+.lang-logo {
+  cursor: pointer;
+}
+.button-nav:hover {
+  background-color: red;
+}
+.nav-link ul li a:hover,
+.nav-link:focus {
+  background-color: #dee2e682;
+  color: blue !important;
+}
+.aside-list {
+  box-shadow: 1px 1px 20px 1px white;
+}
+.navbar {
+  z-index: 5;
+  border-bottom: 1px solid #808080bd;
+}
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: blue;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
